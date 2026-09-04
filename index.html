@@ -673,6 +673,38 @@ main > section:nth-of-type(odd) span[class*="uppercase"]{
     font-size: 9.5px !important;
   }
 }
+
+/* Correção da última seção: fundo 100% branco e textos escuros */
+main > section:last-of-type {
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #12332d !important;
+}
+
+main > section:last-of-type h1,
+main > section:last-of-type h2,
+main > section:last-of-type h3,
+main > section:last-of-type h4,
+main > section:last-of-type p,
+main > section:last-of-type span:not(.text-gradient):not(.text-primary):not(.text-secondary) {
+  color: #12332d !important;
+}
+
+main > section:last-of-type .text-muted-foreground {
+  color: #4a6560 !important;
+}
+
+main > section:last-of-type .text-gradient,
+main > section:last-of-type .text-primary,
+main > section:last-of-type .text-secondary {
+  color: #ffd54a !important;
+}
+
+main > section:last-of-type::before,
+main > section:last-of-type::after,
+main > section:last-of-type .surface-glow::before {
+  display: none !important;
+}
 </style>
 </head>
 <body class="min-h-screen bg-background text-foreground">
@@ -1049,7 +1081,7 @@ main > section:nth-of-type(odd) span[class*="uppercase"]{
 <div class="flex items-start gap-3"><span class="check-circle">✓</span><span class="text-sm font-semibold">Acesso imediato</span></div>
 <div class="flex items-start gap-3 opacity-40"><span class="check-circle">×</span><span class="text-sm font-semibold line-through">Apostila completa INSS</span></div>
 <div class="flex items-start gap-3 opacity-40"><span class="check-circle">×</span><span class="text-sm font-semibold line-through">Flashcards de memorização</span></div>
-</div>
+<div class="flex items-start gap-3 opacity-40"><span class="check-circle">×</span><span class="text-sm font-semibold line-through">500 questões comentadas</span></div></div>
 <div class="mt-7 text-center"><p class="old-price text-sm line-through">De R$49,90</p><p class="plan-price mt-1 text-4xl sm:text-5xl font-black tracking-tight">R$ 27,90</p></div>
 <a class="plan-cta secondary-plan mt-7 w-full min-h-[56px] inline-flex items-center justify-center rounded-[12px] font-black" href="https://pay.kirvano.com/3e3aff3a-1a77-4843-b1b0-996d12f6605e">QUERO O MATERIAL</a>
 <p class="plan-micro mt-3 text-center text-xs">Acesso imediato ao material digital</p>
